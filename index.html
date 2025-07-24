@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swan Pantry</title>
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+    <div class="page-container hero">
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="penyajian.html">Penyajian</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+        <div class="headline">
+            <h1>
+                "<span class="orange">TERIKAT</span> nikmat, harum
+                <span class="orange">GULA AREN</span>"
+            </h1>
+        </div>
+        <div class="bottom-bar">
+            <div class="social">
+                <a href="https://www.instagram.com/swan.pantry/" target="_blank"><img src="assets/FooterInstagram.png" alt="Instagram" class="FooterInstagram" /></a>
+                <a href="https://shopee.co.id/swanpantry" target="_blank"><img src="assets/FooterShopee.png" alt="Shopee" class="FooterShopee" /></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const burger = document.querySelector(".burger");
+        const navLinks = document.querySelector(".nav-links");
+
+        burger.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-active");
+            burger.classList.toggle("toggle");
+        });
+    </script>
+</body>
+</html>

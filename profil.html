@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swan Pantry - Profil</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="profil-header">
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="penyajian.html">Penyajian</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+    </div>
+
+    <main class="profil-content">
+        <div class="profil-container">
+            <div class="profil-text">
+                <h2>PROFIL</h2>
+                <p>
+                    Swan Pantry adalah merek kuliner asal Bandung yang dikenal dengan produk makanan siap saji bergaya
+                    rumahan, mengusung cita rasa khas Sunda yang autentik. Didirikan saat masa pandemi dan mulai membuka
+                    toko offline setelah masa pandemi berakhir. Swan Pantry berkomitmen menyajikan makanan lezat tanpa
+                    bahan pengawet, dengan kualitas dan rasa yang konsisten. Swan Pantry adalah UMKM yang bergerak
+                    dibidang oleh – oleh makanan rumahan dan makanan siap saji, mereka menyajikan makanan siap saji dan
+                    oleh – oleh yaitu gepuk seperti gepuk ayam dan gepuk sapi dan masih banyak lagi
+                </p>
+            </div>
+            <div class="profil-stall-image">
+                <img src="assets/contentProfil.png" alt="Kios Swan Pantry">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="social">
+            <a href="https://www.instagram.com/swan.pantry/"><img src="assets/FooterInstagram.png" alt="Instagram"
+                    class="FooterInstagram"></a>
+            <a href="https://shopee.co.id/swanpantry"><img src="assets/FooterShopee.png" alt="Shopee"
+                    class="FooterShopee"></a>
+        </div>
+    </footer>
+
+     <script>
+        const burger = document.querySelector(".burger");
+        const navLinks = document.querySelector(".nav-links");
+
+        burger.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-active");
+            burger.classList.toggle("toggle");
+        });
+    </script>
+
+</body>
+
+</html>

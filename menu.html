@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swan Pantry - Menu</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="page-menu">
+
+    <header class="menu-header">
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="penyajian.html">Penyajian</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="menu-content">
+        <div class="menu-container">
+            <div class="menu-title">
+                <h2>MENU</h2>
+            </div>
+            <div class="menu-layout">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="assets/ContentMenu1.png" alt="Gepuk Sapi">
+                        <div class="item-description">
+                            <h3>Gepuk Sapi</h3>
+                            <p>Dibuat dari Daging has pilihan, santan, rempah-rempah lainnya. Diolah dengan bumbu khas
+                                Swan, aroma Gula Aren, Daun Jeruk dan rempah-rempah lainnya.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="assets/ContentMenu2.png" alt="Gepuk Ayam">
+                        <div class="item-description">
+                            <h3>Gepuk Ayam</h3>
+                            <p>Gepuk Ayam dengan tekstur lembut dengan bumbu meresap sempurna. Diolah dengan racikan
+                                bumbu khas dari keluarga Swan, aroma Gula Aren, Daun Jeruk dan rempah-rempah lainnya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-testimonials">
+                    <img src="assets/CommentMenu1.png" alt="Testimonial 1" class="testimonial1">
+                    <img src="assets/CommentMenu2.png" alt="Testimonial 2" class="testimonial2">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="social">
+            <a href="https://www.instagram.com/swan.pantry/"><img src="assets/FooterInstagram.png" alt="Instagram"
+                    class="FooterInstagram"></a>
+            <a href="https://shopee.co.id/swanpantry"><img src="assets/FooterShopee.png" alt="Shopee"
+                    class="FooterShopee"></a>
+        </div>
+    </footer>
+
+ <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+
+</body>
+
+</html>

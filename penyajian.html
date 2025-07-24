@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swan Pantry - Penyajian & Penyimpanan</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="page-penyajian">
+
+    <header class="penyajian-header">
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="penyajian.html">Penyajian</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="penyajian-content">
+        <div class="penyajian-container">
+            <h2>PENYAJIAN & PENYIMPANAN</h2>
+            <p>
+                Bisa dipanaskan terlebih dahulu sekitar 2-3 menit menggunakan api sedang jika ingin disajikan dengan
+                <br>
+                hangat bersama keluarga, bisa juga langsung disantap karena makanan ini siap saji, jadi jangan khawatir
+                <br>
+                jika Gepuknya tidak matang. Simpan dalam suhu ruangan yang dingin dan jangan terkena sinar <br>
+                matahari terlalu lama.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="social">
+            <a href="https://www.instagram.com/swan.pantry/"><img src="assets/FooterInstagram.png" alt="Instagram"
+                    class="FooterInstagram"></a>
+            <a href="https://shopee.co.id/swanpantry"><img src="assets/FooterShopee.png" alt="Shopee"
+                    class="FooterShopee"></a>
+        </div>
+    </footer>
+
+ <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+
+</body>
+
+</html>

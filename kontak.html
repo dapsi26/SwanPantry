@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swan Pantry - Kontak</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="page-kontak">
+
+    <header class="kontak-header">
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="penyajian.html">Penyajian</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="kontak-content">
+        <div class="kontak-container">
+            <h2>KONTAK</h2>
+            <div class="contact-info">
+                <p>
+                    <strong>Whatsapp:</strong><br>
+                    +62 812-9691-8500
+                </p>
+                <p>
+                    <strong>Instagram:</strong><br>
+                    @swan.pantry
+                </p>
+                <p>
+                    <strong>Shopee:</strong><br>
+                    shopee.co.id/swanpantry
+                </p>
+                <p>
+                    <strong>Alamat:</strong><br>
+                    Jl. Sukajadi No. 131-139, Cipedes, Kec. Sukajadi, Kota <br>
+                    Bandung, Jawa Barat 40162. Mainstreet depan Fossil.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="social">
+            <a href="https://www.instagram.com/swan.pantry/"><img src="assets/FooterInstagram.png" alt="Instagram"
+                    class="FooterInstagram"></a>
+            <a href="https://shopee.co.id/swanpantry"><img src="assets/FooterShopee.png" alt="Shopee"
+                    class="FooterShopee"></a>
+        </div>
+    </footer>
+
+ <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+
+</body>
+
+</html>

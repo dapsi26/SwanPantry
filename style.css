@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ======================== */
+/*    Style Halaman Home    */
+/* ======================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Cormorant', 'Lato', 'Poppins', sans-serif;
+    height: 100%;
+}
+
+.hero {
+    background: url('assets/bgHome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo img {
+    height: auto; 
+    width: 100px;  
+    vertical-align: middle;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #8E1212B2;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links li a:hover {
+    background-color: #8c2e1e;
+}
+
+.headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headline h1 {
+    font-size: 32px;
+    color: white;
+    font-family: 'Lato';
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.orange {
+    color: #FFB200;
+    font-weight: bold;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFB200;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social a img.FooterInstagram {
+    width: 48px;
+    height: 48px;
+    margin-left: 15px;
+}
+
+.social a img.FooterShopee {
+    width: 48px;
+    height: 54px;
+    margin-left: 15px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.burger .fa-bars {
+    display: block;
+}
+
+.burger .fa-xmark {
+    display: none;
+}
+
+.burger.toggle .fa-bars {
+    display: none;
+}
+
+.burger.toggle .fa-x {
+    display: block;
+}
+
+/* ======================== */
+/*   Style Halaman Profil   */
+/* ======================== */
+
+.profil-header {
+    background: url('assets/bgProfil.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.profil-content {
+    background-color: #8E1212;
+    padding: 60px 20px;
+    color: white;
+}
+
+.profil-container {
+    max-width: 1300px;
+    margin: 0px auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.profil-text {
+    flex: 1.5;
+}
+
+.profil-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.profil-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.profil-stall-image {
+    flex: 1;
+}
+
+.profil-stall-image img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+body>.bottom-bar {
+    position: relative;
+}
+
+/* ======================== */
+/*    Style Halaman Menu    */
+/* ======================== */
+
+.menu-header {
+    background: url('assets/bgMenu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.menu-content {
+    background-color: #8E1212;
+    padding: 60px 20px;
+    color: white;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.menu-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-items {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-left: -10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item-description h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.item-description p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.menu-testimonials {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-testimonials img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-testimonials img.testimonial1 {
+    margin-top: -30px;
+}
+
+.menu-testimonials img.testimonial2 {
+    margin-top: 20px;
+}
+
+/* ========================================= */
+/*   Style Halaman Penyajian & Penyimpanan   */
+/* ========================================= */
+
+.penyajian-header {
+    background: url('assets/bgPenyajian.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.penyajian-content {
+    background-color: #8E1212;
+    padding: 60px 20px;
+    color: white;
+}
+
+.penyajian-container {
+    max-width: 1200px;
+    margin-bottom: 200px;
+    margin-left: 80px;
+}
+
+.penyajian-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.penyajian-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* ==================================== */
+/*         Style Halaman Kontak         */
+/* ==================================== */
+
+.kontak-header {
+    background: url('assets/bgKontak.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.kontak-content {
+    background-color: #8E1212;
+    color: white;
+    padding: 60px 40px;
+    position: relative;
+}
+
+.kontak-container {
+    text-align: center;
+}
+
+.kontak-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.contact-info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info p strong {
+    font-weight: 600;
+}
+
+/* ==================================== */
+/*           Style Responsive           */
+/* ==================================== */
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 60%;
+        max-width: 300px;
+        background-color: #8E1212;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0);
+    }
+
+    .burger.toggle .fa-bars {
+        display: none;
+    }
+
+    .burger.toggle .fa-xmark {
+        display: block;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .headline h1 {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    .bottom-bar {
+        justify-content: center;
+    }
+
+    .profil-content,
+    .menu-content,
+    .kontak-content {
+        padding: 40px 20px;
+    }
+
+    .penyajian-content {
+        width: 115.4%;
+        max-width: 600px;
+        padding: 40px 20px;
+        margin: 0px -60px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .profil-container, .menu-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .profil-text {
+        text-align: center;
+    }
+
+    .profil-text p {
+        text-align: left;
+    }
+
+    .menu-title {
+        text-align: center;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-testimonials {
+        margin-top: 30px;
+    }
+
+    .menu-testimonials img.testimonial1, .menu-testimonials img.testimonial2 {
+        margin-top: 20px;
+    }
+
+    .penyajian-container {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
